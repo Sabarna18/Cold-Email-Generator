@@ -1,0 +1,41 @@
+# --- Environment files ---
+.env
+.env.*
+app/.env
+
+# --- Python cache and build files ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.log
+
+# --- Jupyter Notebook files ---
+*.ipynb
+.ipynb_checkpoints/
+
+# --- Virtual environment ---
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# --- System files ---
+.DS_Store
+Thumbs.db
+
+# --- IDE / Editor settings ---
+.vscode/
+.idea/
+*.swp
+
+# --- Project-specific ---
+# Ignore model weights, checkpoints, or datasets (optional)
+models/
+checkpoints/
+data/
+datasets/
+outputs/
+runs/
