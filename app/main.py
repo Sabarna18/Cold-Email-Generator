@@ -6,7 +6,7 @@ from utils import clean_text
 
 def create_streamlit_app(llm , portfolio , clean_text):
     st.title("📧 COLD EMAIL GENERATOR")
-    url_input = st.text_input(value="https://www.amazon.jobs/software-development?utm_source=chatgpt.com" , label= "Enter URL")
+    url_input = st.text_input(value="https://www.amazon.jobs/software-development?utm_source=chatgpt.com" , label= "Enter URL of any job posting page")
     submit_btn = st.button("submit")
     
     if submit_btn:
