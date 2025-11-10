@@ -17,7 +17,19 @@ def create_streamlit_app(llm, portfolio, clean_text):
         label="Enter URL of any job posting page"
     )
     
+    sender_name = st.text_input(
+        value="Your name",
+        label="Enter your name",
+    )
+    
+    organization_name = st.text_input( 
+        value="Your organization name",
+        label="Enter your organization name",
+    )
+    
     submit_btn = st.button("submit")
+    
+       
     
     if submit_btn:
         try:
@@ -31,7 +43,7 @@ def create_streamlit_app(llm, portfolio, clean_text):
                 skills = job.get('skills', [])
                 st.write("Extracted skills:", skills)
                 links = portfolio.get_quiery(skills)
-                email = llm.write_mail(job=job, links=links)
+                email = llm.write_mail(job=job, links=links , sender_name=sender_name, organization_name=organization_name)
                 st.code(email, language="markdown")
                         
         except Exception as e:

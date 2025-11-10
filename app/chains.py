@@ -40,30 +40,35 @@ class Chain():
         return response if isinstance(response , list) else [response]
             
         
-    def write_mail(self , job , links):
+    def write_mail(self , job , links , sender_name, organization_name):
         prompt_extract = ChatPromptTemplate.from_messages([
         ("system", "You are a helpful assistant in Email generation"),
         ("human", """
             ### JOB DESCRIPTION:
             {job_description}
-            
+
             ### INSTRUCTION:
-            You are Sabarna, a business development executive at Core.sabarna. Core.sabarna is an AI & Software Consulting company dedicated to facilitating
+            You are {sender_name}, a Business Development Executive at {organization_name}. 
+            {organization_name} is an AI & Software Consulting company dedicated to facilitating 
             the seamless integration of business processes through automated tools. 
-            Over our experience, we have empowered numerous enterprises with tailored solutions, fostering scalability, 
-            process optimization, cost reduction, and heightened overall efficiency. 
-            Your job is to write a cold email to the client regarding the job mentioned above describing the capability of Core.sabarna 
-            in fulfilling their needs.
-            Also add the most relevant ones from the following links to showcase Core.Sabarna's portfolio: {link_list}
-            Remember you are Sabarna, BDE at Core.sabarna. 
+            Over our experience, we have empowered numerous enterprises with tailored solutions, 
+            fostering scalability, process optimization, cost reduction, and heightened overall efficiency. 
+
+            Your job is to write a cold email to the client regarding the job mentioned above, 
+            describing the capability of {organization_name} in fulfilling their needs. 
+            Also, add the most relevant ones from the following links to showcase {organization_name}'s portfolio: {link_list}
+
+            Remember you are {sender_name}, BDE at {organization_name}. 
             Do not provide a preamble.
+
             ### EMAIL (NO PREAMBLE):
-            
             """),
     ])
 
         chain_extract = prompt_extract | self.llm
         response = chain_extract.invoke(input={"job_description" : str(job),
+                                                  "organization_name" : organization_name,
+                                                  "sender_name" : sender_name,
                                             "link_list" : links})
         final_email = response.content
         return final_email
