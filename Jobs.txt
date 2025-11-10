@@ -1,0 +1,76 @@
+```json
+[
+  {
+    "role": "Artificial intelligence (AI) & Data Science",
+    "experience": "Professional",
+    "skills": "AI, data science, data analysis, responsible AI",
+    "description": "Unlock the power of AI and data to reinvent all facets of business–responsibly."
+  },
+  {
+    "role": "Consulting",
+    "experience": "Professional",
+    "skills": "Industry knowledge, insights, strategic thinking, client advisory",
+    "description": "Industry understanding. Deep insights. Big ideas. You’ll help clients understand what they need to reinvent for the future."
+  },
+  {
+    "role": "Engineering & Manufacturing",
+    "experience": "Professional",
+    "skills": "Data, insights, emerging technology, engineering, manufacturing, sustainability",
+    "description": "Use data, insights, and emerging technology to help clients reimagine what they make—and how they can make it faster, better and more sustainably."
+  },
+  {
+    "role": "Operations & Delivery",
+    "experience": "Professional",
+    "skills": "Data, insights, technology, operations management, process transformation",
+    "description": "Use data, insights and tech to reimagine how people work, moving operations from transactional to transformational."
+  },
+  {
+    "role": "Software Engineering",
+    "experience": "Professional",
+    "skills": "Software development, programming, coding, innovation",
+    "description": "Create software that will power change and empower people."
+  },
+  {
+    "role": "Strategy",
+    "experience": "Professional",
+    "skills": "Insights, strategic thinking, business strategy, foresight",
+    "description": "Success is rooted in smart strategy. Use your insights and strategic thinking to understand how our clients can reinvent to stay ahead of change."
+  },
+  {
+    "role": "Technology",
+    "experience": "Professional",
+    "skills": "Hands-on technology, innovation, solution implementation",
+    "description": "Get hands-on with the technologies that our clients need to reinvent, work in new ways and change the world for the better."
+  },
+  {
+    "role": "Student Opportunities",
+    "experience": "Student, Intern, Early Career",
+    "skills": "Curiosity, learning, innovation, skill building",
+    "description": "You'll join a great place to build your skills and launch your career. From summer internships to innovation-led opportunities, we welcome your curiosity."
+  },
+  {
+    "role": "Apprentice",
+    "experience": "Apprenticeship, Entry-level",
+    "skills": "Teamwork, communication, hands-on experience, learning",
+    "description": "You love being on a team and have great communication skills — and you’re ready for hands-on experience to learn while you earn."
+  },
+  {
+    "role": "Early Career Professional",
+    "experience": "Early Career, Junior Professional",
+    "skills": "Leadership potential, passion, technology, problem-solving",
+    "description": "You're our future leaders. Bring your skills and passion to work with the latest technology to solve for some of the world's biggest challenges."
+  },
+  {
+    "role": "Experienced Professional",
+    "experience": "Experienced Professional, Mid-Career",
+    "skills": "Innovation, solution design, industry transformation, problem-solving",
+    "description": "You see around corners and create solutions. Join our global innovators to help transform industries and change the world for the better."
+  },
+  {
+    "role": "Executive Leader",
+    "experience": "Executive, Senior Leadership",
+    "skills": "Ingenuity, expertise, leadership, strategic vision, change management",
+    "description": "You see endless possibilities and embrace challenges—and change. See how to use your ingenuity and expertise here."
+  }
+]
+```
